@@ -176,7 +176,8 @@ vps deployment with github actions step by step guide in digital ocean as an exe
 
 ## - Start React and Node on server
 to start the server make sure you are in the root of your application where your frontend folder and backend files are located  then run 
-    $ pm2 start --npm "foldername" --run start 
+    $ pm2 start npm --name "digitalocean" -- run start
+
     // make sure you have in package.json of your express app in the script "start": "node app.js"
 
     then 
