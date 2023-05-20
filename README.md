@@ -10,12 +10,12 @@ vps deployment with github actions step by step guide in digital ocean as an exe
 ##  - Push code to GitHub
     here make sure to commit in the root not in the frontend folder
     and before that run this in your frontend folder 
-    $ rm -rf .git
+    <span>$</span> rm -rf .git
 
 ## - Create SSH Keys
     in .ssh folder in your computer run these: 
-    1- $ $ cd .ssh 
-    2- $ ssh-keygen -t rsa -b 4096 -C "youremail"
+    1- <span>$</span> cd .ssh 
+    2- <span>$</span> ssh-keygen -t rsa -b 4096 -C "youremail"
     give it a name for exemple "portfolio"
 
 ## - Create Digital Ocean linux server
@@ -175,7 +175,7 @@ vps deployment with github actions step by step guide in digital ocean as an exe
     now if you access to $ cd frontend // you will get a folder called "dist" or "build" 
 
 ## - Start React and Node on server
-to start the server make sure you are in the root of your application where your frontend folder and backend files are located  then run 
+    to start the server make sure you are in the root of your application where your frontend folder and backend files are located  then run 
     $ pm2 start npm --name "foldername" -- run start
 
     // make sure you have in package.json of your express app in the script "start": "node app.js"
@@ -184,5 +184,7 @@ to start the server make sure you are in the root of your application where your
     $ pm2 save
 
 
-ps: if you wanna access to any file to edit it you can run this command
-    $ sudo nano nameOfFile.extension
+    ps: if you wanna access to any file to edit it you can run this command
+        $ sudo nano nameOfFile.extension
+        
+  <p>That's it! By following these steps, you should have your React frontend and Node.js backend automatically built and deployed to your DigitalOcean server using GitHub Actions CI/CD. Remember to adjust the commands, paths, and configuration files according to your specific project structure and requirements.</p>
