@@ -10,7 +10,7 @@ vps deployment with github actions step by step guide in digital ocean as an exe
 ##  - Push code to GitHub
     here make sure to commit in the root not in the frontend folder
     and before that run this in your frontend folder 
-    <span>$</span> rm -rf .git
+    **$** rm -rf .git
 
 ## - Create SSH Keys
     in .ssh folder in your computer run these: 
